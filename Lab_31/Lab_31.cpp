@@ -1,7 +1,6 @@
 #include <cstdlib>                      //библиотека для вычисления модуля                    
 #include <iostream>
 #include <math.h>
-#define E 10e-4
 #define PI 3.14159265  //define-обозначение глобальной переменой  
 using namespace std;
 int main()
@@ -30,7 +29,6 @@ int main()
 		}
 		for (S2 = 0, sn = 1, i3 = 1; fabs(sn) >= e; i3++)
 		{
-			xn *= -x * x;
 			sn = (cos(i3 * x) / i3);
 			S2 += sn;
 		}
